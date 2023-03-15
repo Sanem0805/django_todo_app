@@ -10,7 +10,7 @@ class ToDo(models.Model):
         verbose_name='Выполненно ли',
         default=False
     )
-    created_at = models.DateField(
+    created_at = models.DateTimeField(
         auto_now_add=True
     )
     deadline = models.DateTimeField(
