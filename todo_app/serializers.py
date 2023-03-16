@@ -5,7 +5,7 @@ from .models import ToDo
 class ToDoSerializer(serializers.Serializer):
     id = serializers.ReadOnlyField()
     title = serializers.CharField(max_length=200)
-    is_complited = serializers.BooleanField(required=False)
+    complited = serializers.BooleanField(required=False)
     created_at = serializers.ReadOnlyField()
     deadline = serializers.DateTimeField()
 
